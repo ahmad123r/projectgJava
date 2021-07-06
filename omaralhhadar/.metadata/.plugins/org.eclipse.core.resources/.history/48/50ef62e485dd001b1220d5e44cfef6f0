@@ -1,0 +1,5 @@
+package com.Project.auth.config;
+
+public class MvcConfig {
+
+}

@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+			rel="stylesheet" 
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+			crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/styles.css" />
+		<meta charset="ISO-8859-1">
+	<title>Event Planner</title>
+
+</head>
+	<body>
+		<div class="container">
+		
+			<h2>${ event.host.username}</h2>
+			<div class="event-details-side"  style="
+    padding-top: 228px;
+    margin-left: 40%;
+    color:white;
+">
+		  <%-- <h4><strong>Host:</strong> ${ event.host.username }</h4> --%>
+				<h4><strong>Date:</strong> ${ event.date }</h4>
+				<h4><strong>Location:</strong> ${ event.city }</h4>
+				<h4><strong>Location:</strong> ${ event.capacity }</h4>
+				<h4><strong>People attending:</strong> ${ event.description }</h4>
+				<h4><strong>People attending:</strong> <img src="/@{${event.photosImagePath}}" /></h4>  
+				
+			</div>
+	
+		</div>
+	</body>
+</html>
